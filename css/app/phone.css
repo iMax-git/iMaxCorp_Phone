@@ -1,0 +1,123 @@
+
+/*//////////////////////////////////////////////*/
+/*/////////////       APP CSS     ///////////// */
+/*//////////////////////////////////////////////*/
+
+
+/* HOME APP */
+
+.home{
+    color: white;
+}
+
+/* PHONE APP */
+
+.phone{
+    color: black;
+    background: white;
+    font-family: SegoeUI;
+}
+
+.phone > .head > .state{
+    width: 20%;
+    height: 100%;
+    float: right;
+    background: url("../../assets/style/statusblack.png") no-repeat; 
+    background-size: contain;
+    margin-top: 5px;
+}
+
+#phone-container > .banner{
+    width: 100%;
+    height: 30px;
+    padding-left: 5%;
+}
+
+#phone-container > .banner > .left {
+    float: left;
+    position: absolute;
+    color: rgba(42, 117, 187, 0.938);
+}
+
+#phone-container > .banner > .center {
+    float: left;
+    text-align: center;
+    margin-left: 80px;
+}
+
+#phone-container > .banner > .right {
+    float: right;
+    color: black;
+    margin-right: 15px;
+    color: rgba(42, 117, 187, 0.938);
+}
+
+#phone-container > .search {
+    width: 100%;
+    padding: 2% 0 3% 5%;
+    background: rgb(202, 202, 202);
+}
+
+#phone-container > .search > input{
+    width: 90%;
+    border-radius: 0.2rem;
+    border-width: 2px;
+}
+
+#phone-container > .list{
+    list-style-type: none;
+    list-style-position: outside;
+    height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden; 
+    scrollbar-width: none;  /* Firefox */
+}
+
+#phone-container > .list > div{
+    padding: 1px 8px;
+    margin: 0px 0px;
+    width: 100%;
+    height: 25px;
+    border-style: none none solid;
+    border-color: rgb(140, 133, 133);
+    border-width: 1px;
+}
+
+#phone-container > .selectbar{
+    width: 100%;
+    height: 45px;
+    padding-left: 10%;
+    display: inline-flex;
+}
+
+
+#phone-container > .selectbar > div{
+    margin-left: 7px;
+    text-align: center;
+    padding: 5px;
+}
+
+
+#phone-container > .selectbar > div > p{
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+}
+
+.phone > .back {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+#phone-container > #app-phone-menu-recent{
+    display: none;
+}
+
+
+#phone-container > #app-phone-menu-recent.list{
+    list-style-type: none;
+    list-style-position: outside;
+    height: 435px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}

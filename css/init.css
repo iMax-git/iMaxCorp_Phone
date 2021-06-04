@@ -1,0 +1,245 @@
+@font-face {
+    font-family: SegoeUI;
+    src: url(../assets/font/SegoeUI.woff);
+}
+@font-face {
+    font-family: SegoeUIB;
+    src: url(../assets/font/SegoeUIBold.woff);
+}
+@font-face {
+    font-family: Corp;
+    src: url(../assets/font/Corporation.otf);
+}
+
+body{
+    background: black;
+}
+
+#phone {
+    width: 20%;
+    height: 75vh;
+    position: fixed;
+    top: 25%;
+    right: 0;
+    color: white;
+}
+
+.coque{
+    background: url("../assets/coque/coque.png") no-repeat;
+    background-size: cover;
+    height: 630px;
+    z-index: 9999;
+    position: fixed;
+    width: 320px;
+    pointer-events: none;
+}
+
+.locked{
+    height: 560px;
+    background: url("../assets/wallpaper/fond4.png") no-repeat;
+    width: 270px;
+    top: 35px;
+    position: absolute;
+    z-index: 0;
+    left: 30px;
+    border-radius: 1.5rem;
+    background-size: cover;
+}
+
+.screen{
+    height: 560px;
+    background: url("../assets/wallpaper/fond4.png") no-repeat;
+    width: 270px;
+    top: 35px;
+    position: absolute;
+    z-index: 0;
+    left: 30px;
+    border-radius: 1.5rem;
+    background-size: cover;
+}
+
+.head {
+    width: 86%;
+    height: 2%;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+.state{
+    width: 20%;
+    height: 100%;
+    float: right;
+    background: url("../assets/style/statuswhite.png") no-repeat;
+    background-size: contain;
+    margin-top: 5px;
+}
+
+.hour{
+    float: left;
+    margin: 1%;
+    font-family: SegoeUI;
+    margin-top: 0px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+
+.lockedhour{
+    float: left;
+    color: white;
+    margin-top: 50px;
+    font-size: 60px;
+    margin-left: 5px;
+    width: 100%;
+    text-align: center;
+    font-family: SegoeUI;
+}
+.lockedday{
+    float: left;
+    color: white;
+    font-size: 15px;
+    margin-left: 5px;
+    width: 100%;
+    text-align: center;
+    font-family: SegoeUI;
+}
+
+.lockicon{
+    float: left;
+    color: white;
+    margin-top: 10px;
+    font-size: 30px;
+    margin-left: 5px;
+    width: 100%;
+    text-align: center;
+    font-family: SegoeUI;
+}
+
+.head > .operator{
+    float: left;
+    margin: 1%;
+    color: white;
+    font-family: SegoeUI;
+    margin-top: 0px;
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+.container{
+    height: 80%;
+    width: 95%;
+    margin-top: 10px;
+    max-height: 435px;
+}
+
+.container-app{
+    height: 100%;
+    width: 95%;
+    margin-top: 10px;
+    max-height: 510px;
+    padding-left: 5px;
+}
+
+.container-grid{
+    display: grid;
+    grid-template-areas: ". . . ."; 
+    grid-auto-rows: min-content;
+    margin: 0% 4% 0%;
+    grid-template-columns: 25%;
+    padding: 5% 0 0 0;
+}
+
+.screen > .footer{
+    height: 11%;
+    background: rgba(176, 176, 176, 0.43);
+    width: 90%;
+    margin-left: 15px;
+    border-radius: 1.5rem;
+    display: grid;
+    grid-template-areas: ". . . ."; 
+}
+
+.back {
+    height: 1%;
+    background: rgba(255, 255, 255, 0.75);
+    width: 40%;
+    margin-top: 5px;
+    margin-left: 85px;
+    border-radius: 1.5rem;
+}
+
+.app{
+    width: 45px;
+    height: 45px;
+    margin: 8px;
+    border-radius: 0.7rem;
+}
+
+.app:hover{
+    box-shadow: 0px 0px 30px 0px rgba(236, 229, 229, 0.61);
+    transition: all 200ms ease-out;
+}
+
+.BLOCKED {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.selected{
+    color: white;
+    background-color: rgb(52, 152, 247);
+}
+
+/*//////////////////////////////////////////////*/
+/*/////////////       APP CSS     ///////////// */
+/*//////////////////////////////////////////////*/
+
+
+.CLOSED {
+	height: 560px;
+	width: 270px;
+	top: 35px;
+	position: absolute;
+	z-index: 0;
+	left: 30px;
+	border-radius: 1.5rem;
+	background-size: cover;
+	background-color: rgb(0, 0, 0);
+}
+
+.load {
+    text-align: center;
+	background-color: rgb(19,19,19);
+}
+
+.loading {
+    padding-top: 50%;
+    font-family: Corp;
+    font-size: 20px;
+}
+
+.loading > img {
+	height: 128px;
+	width: 128px;
+}
+
+.loading > .loadingbar{
+    width: 50%;
+    height: 5px;
+    background: white;
+    margin: 0 25%;
+    border-radius: 1.5rem;
+}
+
+.loading > .barwork{
+    animation: loadingbar 5s ease-out forwards;
+}
+
+@keyframes loadingbar{
+    from {width: 0%;} to {width: 50%;}
+}

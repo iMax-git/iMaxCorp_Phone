@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/init.css">
+    <link rel="stylesheet" href="css/app/phone.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">  
+    <script src="js/class.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/app/phone.js"></script>
+</head>
+<body>
+    <section id="phone" class="BLOCKED">
+        <div class="coque"></div>
+        <div class="CLOSED"> 
+            <div class="loading" style="display:none;">
+                <img src="assets/logoapp/imax.png">
+                <p>iMax Corporation</p>
+                <div class="loadingbar"></div>
+            </div>
+        </div>
+        <div class="locked" style="display:none;">
+            <div class="lock head"><div class="operator">iMaxCorp</div><div class="state"></div></div>
+            <div class="lock container container-locked">
+                <div class="lockicon"><i class="fas fa-lock"></i></div>
+                <div class="lockedhour" id="hour">00:00</div>
+                <div class="lockedday" id="day">Lundi 01 Janvier</div>
+            </div>
+            <div class="lock footer">
+            </div>
+        </div>
+        <div class="home screen" style="display:none;">
+            <div class="head"><div class="hour" id="hour">00:00</div><div class="state"></div></div>
+            <div class="container container-grid" id="ui-container"></div>
+            <div class="footer" id="ui-footer"></div>
+            <div class="back" id="ui-back" onclick="SwitchScreen('locked','home')"></div>
+        </div>
+    </section>
+</body>
+</html>
