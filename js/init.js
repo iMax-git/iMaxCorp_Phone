@@ -19,32 +19,25 @@ var app = [
                 </div>\
                 <div class="list" id="app-phone-menu-contact">\
                     <div>iMax</div>\
-                    <div>dJack</div>\
-                    <div>Dako</div>\
-                    <div>Alexi la frite</div>\
-                    <div>Grinch</div>\
-                    <div>iMax</div>\
-                    <div>dJack</div>\
-                    <div>Dako</div>\
-                    <div>Alexi la frite</div>\
-                    <div>Grinch</div>\
-                    <div>iMax</div>\
-                    <div>dJack</div>\
-                    <div>Dako</div>\
-                    <div>Alexi la frite</div>\
-                    <div>Grinch</div>\
-                    <div>iMax</div>\
-                    <div>dJack</div>\
-                    <div>Dako</div>\
-                    <div>Alexi la frite</div>\
-                    <div>Grinch</div>\
+                    <div>Person</div>\
+                    <div>Person</div>\
+                    <div>Person</div>\
+                    <div>Person</div>\
+                    <div>Person</div>\
+                    <div>Person</div>\
+                    <div>Person</div>\
+                    <div>Person</div>\
+                    <div>Person</div>\
+                    <div>Person</div>\
+                    <div>Person</div>\
+                    <div>Person</div>\
                 </div>\
                 <div class="banner" id="app-phone-menu-recent"><div class="center">Recents</div></div>\
                 <div class="list" id="app-phone-menu-recent">\
                     <div>iMax</div>\
-                    <div>dJack</div>\
-                    <div>Dako</div>\
-                    <div>Alexi la frite</div>\
+                    <div>Person</div>\
+                    <div>Person</div>\
+                    <div>Person</div>\
                 </div>\
                 <div class="selectbar" id="app-phone-selectbar">\
                     <div id="app-phone-button-fav"><i class="far fa-star" ></i><p>Favorites</p></div>\
